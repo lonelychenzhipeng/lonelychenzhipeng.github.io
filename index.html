@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="modern-accordion.css">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>fruit</title>
+		<script src="http://www.ijquery.cn/js/jquery-1.7.2.min.js"></script>
+		<script src="http://www.ijquery.cn/js/jquery.accordion.js"></script>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				text-decoration: none;
+				font-family: STKaiti;
+			}
+			
+			nav {
+				width: 100%;
+				height: 40px;
+				background: #EEEEEE;
+			}
+			
+			nav>p {
+				width: 500px;
+				height: 40px;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 40px;
+				color: #296317;
+				min-width: 1200px;
+			}
+			
+			section {
+				width: 1400px;
+				height: 500px;
+				margin: 0 auto;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			section>div {
+				width: 5600px;
+				height: 500px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			
+			section>div>img {
+				width: 1400px;
+				height: 500px;
+				background-size: 100% 100%;
+				float: left;
+			}
+		</style>
+	</head>
+
+	<body class="custom-bg">
+		<nav>
+			<p>地址：江西省赣州市石城县水果市场</p>
+		</nav>
+		<section>
+			<div id="lbt">
+				<img src="https://imgjd4.fruitday.com/images/2017-06-09/14797d1a5d345a9afcb546b20aa5e735.jpg" alt="" />
+				<img src="https://imgjd4.fruitday.com/images/2017-06-08/38969d79f7824c6aad7a028941c32a58.jpg" alt="" />
+				<img src="https://imgjd4.fruitday.com/images/2017-05-24/e560d88f47fefc5c648733921a20b2f8.jpg" alt="" />
+				<img src="https://imgjd4.fruitday.com/images/2017-06-09/14797d1a5d345a9afcb546b20aa5e735.jpg" alt="" />
+			</div>
+		</section>
+		<ul class="mdn-accordion single-level-accordion red-accordion-theme">
+			<li class="sub-level">
+				<input class="accordion-toggle" type="checkbox" name="accordion-panel-1" id="accordion-panel-1">
+				<label class="accordion-title" for="accordion-panel-1"> <i class="fa fa-file-text"></i>国产新鲜水果</label>
+				<ul>
+					<li>
+						<div class="mdn-container">
+							<p>
+								苹果：￥15/kg<br>
+								<br /> 香蕉：￥15/kg
+								<br>
+								<br /> 桃子：￥15/kg
+								<br>
+								<br /> 苹果：￥15/kg
+								<br>
+								<br /> 苹果：￥15/kg
+								<br>
+								<br /> 苹果：￥15/kg
+								<br>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<!-- end accordion panel -->
+
+			<li class="sub-level">
+				<input class="accordion-toggle" type="checkbox" name="accordion-panel-2" id="accordion-panel-2">
+				<label class="accordion-title" for="accordion-panel-2"><i class="fa fa-file-text"></i> 进口新鲜水果 </label>
+				<ul>
+					<li>
+						<div class="mdn-container">
+							<p>
+								猕猴桃：￥55/kg<br>
+								<br /> 印度香蕉：￥15/kg
+								<br>
+								<br /> 葡萄牙葡萄：￥15/kg
+								<br>
+								<br /> 美国大苹果：￥15/kg
+								<br>
+								<br /> 苹果：￥15/kg
+								<br>
+								<br /> 苹果：￥15/kg
+								<br>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<!-- end accordion panel -->
+
+			<li class="sub-level">
+				<input class="accordion-toggle" type="checkbox" name="accordion-panel-3" id="accordion-panel-3">
+				<label class="accordion-title" for="accordion-panel-3"><i class="fa fa-file-text"></i> 礼品卡卷 赠品 </label>
+				<ul>
+					<li>
+						<div class="mdn-container">
+							<p>
+								暂时未开放
+							</p>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<!-- end accordion panel -->
+		</ul>
+		<div>
+			
+		</div>
+		<script type="text/javascript">
+			//轮播图
+			var lbt = document.getElementById("lbt");
+			var left = 0;
+			var id = setInterval(function setp() {
+				left -= 10;
+				lbt.style.left = left + "px";
+				if(left == -4200) {
+					left = 0;
+				}
+				if(left % 1400 == 0) {
+					clearInterval(id);
+					setTimeout(function() {
+						id = setInterval(setp, 10);
+					}, 2000)
+				}
+			}, 10)
+		</script>
+	</body>
+
+</html>
