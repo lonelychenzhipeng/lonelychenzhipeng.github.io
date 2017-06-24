@@ -1,0 +1,213 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: STKaiti;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+#show {
+	width: 100%;
+	height: 100%;
+	background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1498886030&di=ce4fb409ecacba8b5568870c0f0c530b&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.pp3.cn%2Fuploads%2Fallimg%2F111111%2F1PFS107-6.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+#show>div {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#show>div>h1 {
+	height: 100px;
+	width: 100%;
+	line-height: 100px;
+	text-align: center;
+	color: white;
+	animation-duration: 2s;
+	font-size: 45px;
+}
+
+#show-text>p {
+	width: 100%;
+	height: 600px;
+	/*background: yellow;*/
+}
+
+#bbb,
+#gb {
+	font-family: "微软雅黑";
+	color: white;
+}
+
+
+/*
+ 
+ * 
+ * */
+
+#aboutme {
+	width: 100%;
+	/*height: 550px;*/
+	font-family: "Space Mono", Arial, serif;
+}
+
+#aboutme>h2 {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 35px;
+}
+
+#aboutme>ul {
+	width: 100%;
+	height: 450px;
+}
+
+#aboutme>ul:nth-of-type(1)>li {
+	width: 100%;
+	height: 80px;
+	font-size: 20px;
+	margin:0 auto;
+}
+
+#aboutme>ul:nth-of-type(1)>li>span {
+	margin-left: 30px;
+	font-size: 17px;
+	color: gainsboro;
+}
+
+#aboutme>ul:nth-of-type(2) {
+	width: 100%;
+}
+
+#aboutme>ul:nth-of-type(2)>li {
+	width: 100%;
+}
+
+#aboutme>ul:nth-of-type(2)>li:nth-child(1) {
+	height: 50px;
+	font-size: 30px;
+}
+
+#aboutme>ul:nth-of-type(2)>li:nth-child(2) {
+	height: 100px;
+	font-size: 17px;
+}
+
+
+/*
+ 
+ * 
+ * */
+
+#work {
+	width: 100%;
+	/*height: 500px;*/
+	font-family: "Space Mono", Arial, serif;
+	/*background: yellow;*/
+}
+
+#work>h2 {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 35px;
+}
+
+
+
+#work>div:nth-of-type(1)>div:nth-child(1) {
+	background: url(../img/工作.png) no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	display: none;
+}
+
+#work>div:nth-of-type(1)>div:nth-child(2) {
+	background: url(../img/教育.png) no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+	display: none;
+}
+
+#work>ul {
+	width: 100%;
+	height: 300px;
+	
+}
+
+#work>ul:nth-of-type(1) {
+	/*background: blue;*/
+	margin-top: 120px;
+}
+
+#work>ul:nth-of-type(1)>li {
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+	transition: height 0.3s ease;
+	background: ghostwhite;
+}
+
+#work>ul:nth-of-type(2) {
+	/*background: pink;*/
+}
+
+#work>ul:nth-of-type(2)>li {
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+	transition: height 0.3s ease;
+	background: ghostwhite;
+}
+
+#work>ul:hover li {
+	height: 75px;
+}
+
+#work>ul>li:hover {
+	height: 150px;
+	background: gold;
+}
+/*
+ 
+ * 
+ * 
+ * */
+#Skills {
+	width: 100%;
+	height: 500px;
+	font-family: "Space Mono", Arial, serif;
+	/*background: yellow;*/
+	display: none;
+	
+}
+#Skills>h2 {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 35px;
+}
+#canvas_darw{
+	width: 100%;
+	height: 400px;
+	display: flex;
+}
+#canvas_darw>canvas{
+	/*border: 1px solid red;*/
+	margin: auto;
+}
